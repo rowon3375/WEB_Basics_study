@@ -18,11 +18,11 @@
 
     <h1>PHP</h1>
     <?php
-      function b(){
-        echo "hello php";
+      function b($input){
+        return $input+1;
       }
 
-      b();
+      echo b(3);
      ?>
 
 
