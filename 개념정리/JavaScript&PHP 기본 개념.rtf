@@ -280,12 +280,26 @@ var_dump(\'b9\'e6\'c1\'a4\'bd\'c4\'c0\'cc\'b3\'aa \'b0\'aa): true, false \'b0\'a
 ** \'c1\'d6\'bc\'d2\'c3\'a2\'bf\'a1\'bc\'ad \'ba\'f1\'b9\'d0\'b9\'f8\'c8\'a3, \'be\'c6\'c0\'cc\'b5\'f0 \'b6\'e7\'bf\'ec\'b4\'c2 \'b0\'cd\
 ex) 4.php?password=1111\
 \uc0\u8212 > \'c1\'a4\'ba\'b8\'c0\'c7 \'b0\'aa\'c0\'bb \'b9\'de\'be\'c6 \'bb\'e7\'bf\'eb\'c0\'da\'b0\'a1 1111\'c0\'bb \'c0\'d4\'b7\'c2\'c7\'df\'b4\'d9\'b4\'c2 \'b0\'cd\'c0\'bb \'be\'cb \'bc\'f6 \'c0\'d6\'b4\'d9.\
-echo $_GET[\'a1\'aepassword] ==> \'c0\'da\'b9\'d9\'bd\'ba\'c5\'a9\'b8\'b3\'c6\'ae\'c0\'c7 promte\'bf\'cd \'ba\'f1\'bd\'c1\'c7\'cf\'b4\'d9.\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+
+\f1\b \cf0 echo $_GET[\'a1\'aepassword] 
+\f0\b0 ==> \'c0\'da\'b9\'d9\'bd\'ba\'c5\'a9\'b8\'b3\'c6\'ae\'c0\'c7 promte\'bf\'cd \'ba\'f1\'bd\'c1\'c7\'cf\'b4\'d9.\
+
+\f1\b (2\'b0\'b3 \'bb\'e7\'bf\'eb\'bd\'c3) echo $_GET[\'a1\'aename\'a1\'af].\'a1\'b1,\'a1\'b1$_GET[\'a1\'aeid\'a1\'af];
+\f0\b0 \
 \
 1. \'c0\'a5 \'c6\'e4\'c0\'cc\'c1\'f6 \'c1\'d6\'bc\'d2\'c3\'a2\'bf\'a1  4.php?password=1111 \'c0\'d4\'b7\'c2\
 2. echo $_GET[\'a1\'aepassword] \'bf\'a1 \'c0\'d4\'b7\'c2\'b5\'c8 \'b0\'aa\'c0\'bb \'b3\'d6\'c0\'bd\
 3. \'b0\'e1\'b0\'fa\'b8\'a6 \'c0\'a5 \'c6\'e4\'c0\'cc\'c1\'f6\'bf\'a1 \'c3\'e2\'b7\'c2\
 ==> \'b9\'db\'bf\'a1\'bc\'ad \'c0\'d4\'b7\'c2\'b5\'c7\'b4\'c2 \'b0\'aa\'c0\'bb \'b0\'a1\'c1\'f6\'b0\'ed \'bf\'c3 \'bc\'f6 \'c0\'d6\'b0\'d4 \'b5\'c8\'b4\'d9.\
+\
+
+\f1\b \ul ** \'c1\'d6\'bc\'d2\'bf\'cd \'b0\'aa\'b5\'e9\'c0\'bb \'b1\'b8\'ba\'d0 = ?\
+\'b0\'aa\'b0\'fa \'b0\'aa\'c0\'bb \'b1\'b8\'ba\'d0 = &\
+\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+
+\f0\b0 \cf0 \ulnone file_get_contents(\'a1\'b0\'c6\'c4\'c0\'cf\'b8\'ed\'a1\'b1): \'bf\'dc\'ba\'ce\'c0\'c7 txt \'c6\'c4\'c0\'cf\'c0\'bb \'ba\'d2\'b7\'af\'bf\'c8.\
 \pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
 
 \fs30 \cf0 \
@@ -429,11 +443,4 @@ function a(input)\{\
 1.  a(1) \'bd\'c7\'c7\'e0\'c0\'b8\'b7\'ce input = 1 \'c0\'cc \'b5\'ca\
 2. return => \'c7\'d4\'bc\'f6\'b4\'c2 \'b1\'d7 \'bc\'f8\'b0\'a3 \'c1\'be\'b7\'e1\'b5\'c7\'b0\'ed \'b5\'da\'bf\'a1 \'c0\'d6\'b4\'c2 \'b0\'aa\'c0\'cc \'c0\'cc \'c7\'d4\'bc\'f6\'c0\'c7 \'b9\'dd\'c8\'af\'b0\'aa\'c0\'cc \'b5\'c8\'b4\'d9.\
 input+1 ==> return \'b0\'aa\'c0\'cc \'b5\'c7\'be\'ee  \'c3\'e2\'b7\'c2\'b0\'aa\'c0\'cc \'b5\'c8\'b4\'d9.\
-3. document.write(a(1) \'c0\'cc \'c3\'e2\'b7\'c2\'b5\'c8\'b4\'d9.\
-\
-=====> a \'c7\'d4\'bc\'f6\'b8\'a6 \'bc\'f6\'c1\'a4\'c7\'cf\'c1\'f6 \'be\'ca\'b0\'ed\'b5\'b5 \'c0\'d4\'b7\'c2\'b0\'aa\'bf\'a1 \'b5\'fb\'b6\'f3 \'b4\'d9\'b8\'a3\'b0\'d4 \'b5\'bf\'c0\'db\'b5\'c7\'be\'ee \'b0\'e1\'b0\'fa\'b8\'a6 \'c3\'e2\'b7\'c2\'c7\'d8 \'b4\'d9\'b8\'a5 \'b9\'e6\'bd\'c4\'b5\'e9\'b7\'ce\'b5\'b5 \'c3\'e2\'b7\'c2\'c7\'d2
-\f2  
-\f0 \'bc\'f6
-\f2  
-\f0 \'c0\'d6\'b5\'b5\'b7\'cf\'c7\'d1\'b4\'d9.\
-\uc0\u8212 > prompt(), write() : \'c0\'a5 \'ba\'ea\'b6\'f3\'bf\'ec\'c0\'fa \'b3\'bb\'c0\'e5 \'c7\'d4\'bc\'f6(built - in)}
+3. document.write(a(1) \'c0\'cc \'c3\'e2\'b7\'c2\'b5\'c8\'b4\'d9.}
