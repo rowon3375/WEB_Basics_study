@@ -30,19 +30,21 @@
       <div id="control">
         <input type="button" value="white" onclick="document.getElementById('target').className='white'"/>
         <input type="button" value="black" onclick="document.getElementById('target').className='black'"/>
-        <a href="http://localhost:8080/write.php">write</a>
       </div>
 
       <article>
-        <?php
-          if(empty($_GET['id']) === false){
-            $sql = 'SELECT * FROM topic WHERE id = '.$_GET['id'];
-            $result = mysqli_query($conn, $sql);
-            $row = mysqli_fetch_assoc($result);
-            echo '<h2>'.$row['title'].'</h2>';
-            echo $row['description'];
-          }
-        ?>
+        <form action="process.php" method="post">
+          <p>
+            Title: <input type="text" name="title">
+          </p>
+          <p>
+            Author: <input type="text" name="author">
+          </p>
+          <p>
+            Content: <textarea name="description"></textarea>
+          </p>
+          <input type="submit" name="name">
+        </form>
       </article>
   </body>
 </html>
