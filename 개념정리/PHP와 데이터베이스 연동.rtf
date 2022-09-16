@@ -1,0 +1,54 @@
+{\rtf1\ansi\ansicpg949\cocoartf2639
+\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\fswiss\fcharset0 Helvetica;\f1\fnil\fcharset129 AppleSDGothicNeo-Regular;\f2\fnil\fcharset129 AppleSDGothicNeo-Bold;
+}
+{\colortbl;\red255\green255\blue255;}
+{\*\expandedcolortbl;;}
+\paperw11900\paperh16840\margl1440\margr1440\vieww11520\viewh8400\viewkind0
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+
+\f0\fs40 \cf0 PHP
+\f1 \'bf\'cd
+\f0  
+\f1 \'b5\'a5\'c0\'cc\'c5\'cd\'ba\'a3\'c0\'cc\'bd\'ba
+\f0  
+\f1 \'bf\'ac\'b5\'bf\'c7\'cf\'b1\'e2\
+** php => null \'c0\'ba false\'b8\'a6 \'c0\'c7\'b9\'cc\'c7\'d1\'b4\'d9.\
+mysqli\
+
+\fs30 : php\'bf\'a1 \'b3\'bb\'c0\'e5\'b5\'c7\'be\'ee \'c0\'d6\'b4\'c2 api
+\fs40 \
+\
+\'bc\'ad\'b9\'f6 \'c1\'a2\'bc\'d3-> DB \'bc\'b1\'c5\'c3-> \'c1\'b6\'c8\'b8->\'c3\'e2\'b7\'c2\
+
+\fs30 : \'b5\'a5\'c0\'cc\'c5\'cd\'ba\'a3\'c0\'cc\'bd\'ba \'c5\'ac\'b6\'f3\'c0\'cc\'be\'f0\'c6\'ae\'b0\'a1 \'b5\'a5\'c0\'cc\'c5\'cd\'ba\'a3\'c0\'cc\'bd\'ba \'bc\'ad\'b9\'f6\'bf\'a1 \'c1\'a2\'bc\'d3\'c7\'d8 \'c0\'cf\'c0\'bb \'c3\'b3\'b8\'ae\'c7\'d2 \'b6\'a7 \'c0\'cf\'be\'ee\'b3\'aa\'b4\'c2 \'c0\'db\'be\'f7\'b5\'e9\'c0\'c7 \'bc\'f8\'bc\'ad\
+\
+				MySQL monitor					        mysqli\
+\'bc\'ad\'b9\'f6\'c1\'a2\'bc\'d3	   
+\fs24 mysql -hlocalhost -uroot -p337575;       $conn = mysqli_connect(\'a1\'ae\'c1\'a2\'bc\'d3\'bc\'ad\'b9\'f6\'c1\'d6\'bc\'d2\'a1\'af,\'a1\'af\'bb\'e7\'bf\'eb\'c0\'daid, \'a1\'ae\'ba\'f1\'b9\'d0\'b9\'f8\'c8\'a3\'a1\'af);
+\fs30 \
+\
+DB \'bc\'b1\'c5\'c3	     
+\fs28  use \'b5\'a5\'c0\'cc\'c5\'cd\'ba\'a3\'c0\'cc\'bd\'ba\'c0\'cc\'b8\'a7;			mysqli_select_db($conn \'a1\'ae\'b5\'a5\'c0\'cc\'c5\'cd\'ba\'a3\'c0\'cc\'bd\'ba\'c0\'cc\'b8\'a7\'a1\'af);
+\fs30 \
+\
+\'c1\'b6\'c8\'b8		    
+\fs24 SELECT * FROM \'c5\'d7\'c0\'cc\'ba\'ed\'b8\'ed;			$result = mysqli_query($conn, \'a1\'aeSELECT * FROM \'c5\'d7\'c0\'cc\'ba\'ed\'b8\'ed);
+\fs30 \
+\
+\'c3\'e2\'b7\'c2		       
+\fs28 \'b1\'d7\'b3\'c9 \'c8\'ad\'b8\'e9\'bf\'a1 \'c3\'e2\'b7\'c2					$row = mysqli_fetch_assoc($result);\
+										$row[\'a1\'aetitle\'a1\'af];\
+										$row[\'a1\'aedescription\'a1\'af]\
+\
+* $row = \'c3\'b9\'b9\'f8\'c2\'b0 \'c7\'e0\'b8\'b8 \'b0\'a1\'c1\'f6\'b0\'ed \'bf\'c2\'b4\'d9.\
+* var_dump(\'ba\'af\'bc\'f6\'b8\'ed) = \'c0\'d4\'b7\'c2\'b0\'aa\'c0\'b8\'b7\'ce \'b5\'e9\'be\'ee\'bf\'c2 \'b5\'a5\'c0\'cc\'c5\'cd\'b0\'a1 \'b9\'ab\'be\'f9\'c0\'ce\'c1\'f6 \'be\'cb\'b7\'c1\'c1\'d8\'b4\'d9.\
+\
+** 
+\f2\b\fs30 \'bf\'ac\'b0\'fc \'b9\'e8\'bf\'ad(Associative array)
+\f1\b0\fs28 \
+: \'be\'ee\'b6\'b2 \'b0\'aa\'bf\'a1 \'c0\'cc\'b8\'a7\'c0\'bb \'ba\'ce\'bf\'a9\'c7\'cf\'b4\'c2 \'b0\'cd\
+\
+$a = array(\'a1\'aetitle\'a1\'af => \'a1\'aehello\'a1\'af, \'a1\'aedescription\'a1\'af => \'a1\'aejavascript\'a1\'af);\
+echo $a[\'a1\'aetitle\'a1\'af]\
+\
+title \'be\'c8\'bf\'a1 hello\'b6\'f3\'b4\'c2 \'b0\'aa\'c0\'cc \'b5\'e9\'be\'ee\'b0\'a1\'c0\'d6\'be\'ee\'bc\'ad title\'c0\'bb \'ba\'d2\'b7\'af\'b5\'b5 hello\'b0\'a1 \'b3\'aa\'bf\'c2\'b4\'d9.}
