@@ -7,28 +7,3 @@ body.black {
   background-color: black;
   color: white;
 }
-header {
-  border-bottom: 1px black solid;
-  padding: 20px;
-}
-nav {
-  width: 200px;
-  height: 600px;
-  float: left;
-  border-right: 1px black solid;
-}
-nav ol{
-  list-style: none;
-  padding: 0px;
-}
-article {
-  float: left;
-  padding: 20px;
-  width: 500px;
-}
-h2 {
-  color : blue;
-}
-#control {
-  float: right;
-}
