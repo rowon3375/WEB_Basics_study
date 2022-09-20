@@ -14,19 +14,22 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>JavaScript</title>
-    <link rel="stylesheet" href="style.css" type="text/css">
+    <link rel="stylesheet" href="./css/style.css" type="text/css">
     <!-- Bootstrap -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/css/bootstrap.min.css"
     integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
   </head>
+
   <body id="target">
-      <header>
+    <div class="container">
+      <header class="jumbotron text-center">
+        <img src="https://s3.ap-northeast-2.amazonaws.com/opentutorials-user-file/course/94.png" class="img-circle" alt="생활코딩" id="logo">
         <h1><a href="http://localhost:8080/index.php">JavaScript</a></h1>
       </header>
 
       <div class="row">
         <nav class="col-md-3">
-          <ol>
+          <ol class="nav nav-pills nav-stacked">
             <?php
             while($row = mysqli_fetch_assoc($result)) {
               echo '<li><a href = "http://localhost:8080/index.php?id='.$row['id'].' ">'.htmlspecialchars($row['title']).'</a></li>'."\n";
@@ -36,11 +39,6 @@
         </nav>
 
         <div class="col-md-9">
-          <div id="control">
-            <input type="button" value="white" onclick="document.getElementById('target').className='white'"/>
-            <input type="button" value="black" onclick="document.getElementById('target').className='black'"/>
-            <a href="http://localhost:8080/write.php">write</a>
-          </div>
 
           <article>
             <?php
@@ -54,9 +52,19 @@
               }
             ?>
           </article>
+          <hr>
+          <div id="control">
+            <div class="btn-group" role="group" aria-label="...">
+              <input type="button" class="btn btn-default btn-lg" value="white" onclick="document.getElementById('target').className='white'"/>
+              <input type="button" class="btn btn-default btn-lg" value="black" onclick="document.getElementById('target').className='black'"/>
+            </div>
+
+            <a href="http://localhost:8080/write.php" class="btn btn-success btn-lg">write</a>
+          </div>
         </div>
 
       </div>
+    </div>
 
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://code.jquery.com/jquery-1.12.4.min.js"
