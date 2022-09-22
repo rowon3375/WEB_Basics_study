@@ -2,6 +2,11 @@ body{
   margin: 0px;
 }
 
+body.black{
+  background-color: black;
+  color: white;
+}
+
 header{
   border-bottom: 1px solid gray;
   padding-left: 30px;
@@ -24,7 +29,7 @@ nav ol{
   list-style: none;
 }
 
-article{
+#content{
   padding-left: 20px;
   float: left;
   width: 400px;
