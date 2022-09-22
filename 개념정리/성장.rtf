@@ -68,7 +68,25 @@ Scale UP: \'c7\'cf\'b3\'aa\'c0\'c7 \'c4\'c4\'c7\'bb\'c5\'cd\'b8\'a6 \'be\'f7\'b1
 									mysqli_query($slave, \'a1\'b0SELECT * FROM topic\'a1\'a6\'a1\'b1)\
 \
 ** \'c4\'c4\'c7\'bb\'c5\'cd\'b0\'a1 \'b4\'f5 \'b4\'c3\'b8\'e9 MySQL Slave\'b0\'a1 \'b4\'c3\'be\'ee \'b7\'a3\'b4\'fd\'c0\'b8\'b7\'ce \'c0\'d0\'b1\'e2\'b8\'a6 \'c1\'f8\'c7\'e0\'c7\'d1\'b4\'d9. \
-	==> \'c0\'d0\'b1\'e2 \'c0\'db\'be\'f7\'c0\'cc \'ba\'ce\'c8\'ad\'b0\'a1 \'b4\'f5 \'b8\'b9\'c0\'cc \'b0\'c9\'b7\'c1\'bc\'ad 		
+	==> \'c0\'d0\'b1\'e2 \'c0\'db\'be\'f7\'c0\'cc \'ba\'ce\'c8\'ad\'b0\'a1 \'b4\'f5 \'b8\'b9\'c0\'cc \'b0\'c9\'b7\'c1\'bc\'ad 		\
+\
+\
++ \'c0\'a5 \'bc\'ad\'b9\'f6\'c0\'c7 Scale OUT\
+- \'c0\'a5 \'bc\'ad\'b9\'f6\'b4\'c2 php\'c0\'c7 Scale OUT\'c0\'bb \'b5\'bd\'b4\'c2\'b4\'d9.\
+ ex) \'bb\'e7\'bf\'eb\'c0\'da\'b0\'a1 opentutorial.org \'b5\'b5\'b8\'de\'c0\'ce \'c1\'d6\'bc\'d2\'b8\'a6 \'c0\'a5 \'ba\'ea\'b6\'f3\'bf\'ec\'c0\'fa\'bf\'a1 \'c0\'d4\'b7\'c2->\'c4\'c4\'c7\'bb\'c5\'cd\'b4\'c2 \'b4\'c9\'b7\'c2\'c0\'cc \'be\'f8\'be\'ee\'bc\'ad DNS\'bc\'ad\'b9\'f6\'b6\'f3\'b4\'c2 \'c4\'c4\'c7\'bb\'c5\'cd\'bf\'a1 IP \'c1\'d6\'bc\'d2\'b8\'a6 \'c3\'a3\'c0\'b8\'b7\'af\'b0\'a8(\'bf\'ee\'bf\'b5\'c3\'bc\'c1\'a6\'b0\'a1 \'b5\'b5\'bf\'cd\'c1\'dc)-> IP\'c1\'a4\'ba\'b8 \'be\'cb\'b7\'c1\'c1\'d6\'be\'ee \'c1\'a2\'bc\'d3\'c7\'d1\'b4\'d9.\
+\
+1. DNS \'bc\'ad\'b9\'f6\'b0\'a1 \'bb\'e7\'bf\'eb\'c0\'da\'bf\'a1\'b0\'d4 \'bc\'ad\'b7\'ce \'b4\'d9\'b8\'a5 \'c4\'c4\'c7\'bb\'c5\'cd\'c0\'c7 ip\'b8\'a6 \'b0\'a1\'b8\'a3\'c3\'c4\'c1\'d6\'be\'ee \'c1\'a2\'bc\'d3\'c7\'cf\'bf\'a9 \'ba\'ce\'c7\'cf\'b8\'a6 \'b0\'df\'b5\'f0\'b0\'d4 \'c7\'d1\'b4\'d9.\
+==> DNS\'c0\'c7 \'b6\'f3\'bf\'ee\'b5\'e5 \'b7\'ce\'ba\'f3 \'b9\'e6\'bd\'c4\
+2. Load Balancer\'b8\'a6 \'c0\'cc\'bf\'eb: load=\'bd\'c3\'bd\'ba\'c5\'db\'bf\'a1 \'b0\'c9\'b8\'ae\'b4\'c2 \'ba\'ce\'c7\'cf, balancer=\'ba\'ce\'c7\'cf\'bf\'a1 \'b1\'d5\'c7\'fc\'c0\'bb \'c0\'e2\'be\'c6\'c1\'d6\'b0\'ed \'ba\'d0\'bb\'ea\'c7\'d8\'c1\'d6\'b4\'c2 \'ba\'d0\'b9\'e8\'b1\'e2\'b8\'a6 \'b4\'e3\'b4\'e7\'c7\'cf\'b4\'c2 \'c0\'e5\'ba\'f1\
+	- \'c7\'cf\'b3\'aa\'c0\'c7 \'c1\'f8\'c0\'d4\'c1\'a1\'c0\'cc \'b5\'c7\'be\'ee \'b4\'eb\'b7\'ae\'c0\'c7 \'bc\'ad\'ba\'f1\'bd\'ba\'b8\'a6 \'c3\'b3\'b8\'ae\'c7\'d1\'b4\'d9.\
+	- \'ba\'ce\'c7\'cf\'b8\'a6 \'ba\'d0\'bb\'ea\'c7\'d1\'b4\'d9.\
+	- \'b1\'b3\'c5\'eb\'b0\'e6\'c2\'fb\'b0\'fa \'b0\'b0\'c0\'ba \'bf\'aa\'c7\'d2\
+3. 
+\f2\b \'c5\'ac\'b6\'f3\'bf\'ec\'b5\'e5 \'c4\'c4\'c7\'c7\'c6\'c3 \'bd\'c3\'bd\'ba\'c5\'db
+\f0\b0 : \'b0\'a1\'bb\'f3\'c8\'ad&\'c1\'be\'b7\'ae\'c1\'a6\
+	- \'c7\'ca\'bf\'e4\'c7\'d1 \'b6\'a7\'bf\'a1 \'c0\'da\'bd\'c5\'c0\'cc \'c7\'ca\'bf\'e4\'c7\'d1 \'c4\'c4\'c7\'bb\'c5\'cd\'b8\'a6 \'c0\'da\'b5\'bf\'c0\'b8\'b7\'ce \'ba\'fc\'b8\'a3\'b0\'d4 \'b8\'b8\'b5\'e9\'be\'ee \'ba\'fc\'b8\'a3\'b0\'d4 \'bb\'e7\'bf\'eb\'c7\'d2 \'bc\'f6 \'c0\'d6\'b4\'d9.\
+	- \'c7\'ca\'bf\'e4\'be\'f8\'b4\'c2 \'c4\'c4\'c7\'bb\'c5\'cd\'b0\'a1 \'c1\'b8\'c0\'e7\'c7\'d2 \'b6\'a7\'bf\'a1\'b4\'c2 \'bf\'e4\'b1\'dd\'c0\'bb \'be\'c6\'b3\'a2\'b1\'e2\'c0\'a7\'c7\'d8 \'c4\'c4\'c7\'bb\'c5\'cd\'b8\'a6 \'c1\'f6\'bf\'ee\'b4\'d9.\
+
 \fs26 \
 	\
 	\
